@@ -125,7 +125,7 @@
 
 [frame]
     width = 1
-    color = "#EBDBB2"
+    color = "#7c6f64"
 
 [shortcuts]
     # shortcuts are specified as [modifier+][modifier+]...key
@@ -160,7 +160,7 @@
 [urgency_critical]
     background = "#504945"
     foreground = "#EBDBB2"
-    frame = "CC241D"
+    frame = "7c6f64"
     timeout = 30
 
 
