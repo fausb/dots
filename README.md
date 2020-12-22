@@ -14,7 +14,7 @@
 - [gruvbox](https://github.com/morhetz/gruvbox) (color scheme *using it in polybar, spotify, gtk, vim, rofi, alacritty*)
 - [flameshot](https://github.com/flameshot-org/flameshot) (powerful screenshot software)
 - [copyq](https://github.com/hluk/CopyQ) (clipboard manager daemon)
-- [dunst](https://github.com/dunst-project/dunst) (ligthweight notification daemon)
+- [dunst](https://github.com/dunst-project/dunst) (lightweight notification daemon)
 - [slock](https://tools.suckless.org/slock/) (simple display locker for x)
 
 #### dotfiles managed by yadm
