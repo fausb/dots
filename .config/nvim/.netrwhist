@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/fb/.config/polybar'
+let g:netrw_dirhist_8='/home/fb/.config/polybar/fonts'
+let g:netrw_dirhist_7='/home/fb/.config/polybar'
+let g:netrw_dirhist_6='/home/fb/.config/polybar/scripts'
+let g:netrw_dirhist_5='/home/fb/.config/polybar'
+let g:netrw_dirhist_4='/home/fb/.config/polybar/scripts'
+let g:netrw_dirhist_3='/home/fb/.gits/polybar-themes/polybar-3/scripts'
+let g:netrw_dirhist_2='/home/fb/.gits/polybar-themes/polybar-3'
+let g:netrw_dirhist_1='/home/fb/.gits/polybar-themes'
+let g:netrw_dirhist_0='/home/fb/.gits/polybar-themes/polybar-3'
