@@ -1,7 +1,7 @@
 # dotfiles
 
 ### using
-- [arch-linux](https://wiki.archlinux.org)
+- [arch-linux](https://wiki.archlinux.org/index.php/Arch_Linux) (btw)
 - [bspwm](https://wiki.archlinux.org/index.php/bspwm) (tiling wm)
 - [sxhkd](https://wiki.archlinux.org/index.php/Sxhkd) (X hotkey daemon highly used along with bspwm)
 - [alacritty](https://github.com/alacritty/alacritty) (fast gpu-accelerated terminal emulator)
@@ -15,7 +15,7 @@
 - [flameshot](https://github.com/flameshot-org/flameshot) (powerful screenshot software)
 - [copyq](https://github.com/hluk/CopyQ) (clipboard manager daemon)
 - [dunst](https://github.com/dunst-project/dunst) (lightweight notification daemon)
-- [slock](https://tools.suckless.org/slock/) (simple display locker for x)
+- [slock](https://tools.suckless.org/slock) (simple display locker for x)
 
 #### dotfiles managed by yadm
 ## use
