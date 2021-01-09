@@ -16,6 +16,7 @@
 - [copyq](https://github.com/hluk/CopyQ) (clipboard manager daemon)
 - [dunst](https://github.com/dunst-project/dunst) (lightweight notification daemon)
 - [slock](https://tools.suckless.org/slock) (simple display locker for x)
+- [powerlevel10k](https://github.com/romkatv/powerlevel10k) (zsh prompt theme)
 
 #### dotfiles managed by yadm
 ## use
