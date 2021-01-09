@@ -18,7 +18,8 @@
 - [slock](https://tools.suckless.org/slock) (simple display locker for x)
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k) (zsh prompt theme)
 
-#### dotfiles managed by (yadm)[https://github.com/TheLocehiliosan/yadm] 
-## use
+#### dotfiles managed by yadm 
+see [yadm](https://github.com/TheLocehiliosan/yadm)
 
+## use
 `yadm clone https:/www.github.com/fausb/dots.git`
