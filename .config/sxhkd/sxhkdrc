@@ -36,8 +36,7 @@ XF86AudioLowerVolume
 XF86AudioRaiseVolume
 	~/.config/dunst/volume/volume.sh up
 
-XF86AudioMute
-	~/.config/dunst/volume/volume.sh mute
+XF86AudioMute ~/.config/dunst/volume/volume.sh mute
 
 #
 # Rest of the hotkeys
@@ -46,17 +45,14 @@ XF86AudioMute
 super + Return
 	 alacritty
 
-super + v
-    copyq menu
-
 ctrl + shift + Escape
 	alacritty --command bashtop
 
+super + v
+	copyq menu
+
 super + space
 	rofi -show drun
-
-super + ctrl + p
-	polybar-msg cmd toggle
 
 Print
 	flameshot gui
@@ -70,27 +66,20 @@ super + alt + z
 super + x
     slock
 
-
-
 #
 # bspwm hotkeys
 #
-
-# Balance desktop
-super + b
-	bspc node @focused:/ -B
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
 # close and kill
-super + {_,shift + }z
-	bspc node -{c,k}
+super + z
+	bspc node -c
 
-# Monocle/tiled layout change
-super + m
-	bspc desktop -l next
+super + shift + z
+    bspc node -k
 
 # hide current node, or restore a queried hidden node
 super + {_,shift} + minus
@@ -107,16 +96,11 @@ super + alt + button{4,5}
 super + alt + n
 	bspc node -s biggest
 
-#
-# state/flags
-#
+## state/flags
 
 # set the window state
 super + {a,s,d,f}
 	bspc node -t {pseudo_tiled,floating,tiled,fullscreen}
-
-alt + space
-	bspc node -t "~"{floating,tiled}
 
 super + g
 	bspc node -g sticky
@@ -125,9 +109,13 @@ super + g
 super + alt + {m,x,z}
 	bspc node -g {marked,locked,private}
 
-#
-# focus/swap
-#
+## focus/swap
+
+super + {q,w,e,r}
+	bspc desktop -f '^{1-4}'
+
+super + {1,2,3,4}
+	bspc desktop -f '^{5-8}'
 
 # rotate desktop by 90 degrees
 super + ctrl + r
@@ -137,28 +125,19 @@ super + ctrl + r
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-# focus the node for the given path jump
-# super + {p,b,comma,period}
-# 	bspc node -f @{parent,brother,first,second}
-
 # focus the next/previous node in the current desktop
 alt + {_,shift + }Tab
 	bspc node -f {next,prev}.local
 
-#super + alt + {Left,Right}
-#	bspc desktop -f {prev,next}.local
+# move window to preselected
+super + shift + m
+    bspc node -n 'last.!automatic.local'
 
 # focus the older or newer node in the focus history
 super + shift + {Left,Right}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
-
-super + {q,w,e,r}
-	bspc desktop -f '^{1-4}'
-
-super + {1,2,3,4}
-	bspc desktop -f '^{5-8}'
 
 # focus or send to the given desktop
 # 8 desktops (4 per monitor )
@@ -188,9 +167,7 @@ ctrl + alt + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
-# move/resize
-#
+## move/resize
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -203,3 +180,7 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# gap reset
+super + b
+    bspc config window_gap 8

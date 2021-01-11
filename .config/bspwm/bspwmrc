@@ -11,50 +11,34 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-## Autostart
-#startup_lock_file=/tmp/bspwm-startup.lock
-#if [ ! -f $startup_lock_file ]; then
-#  echo "dummy" > $startup_lock_file
-  
-  ## Tools
-  dunst &
-  flameshot &
-  copyq &
-  udiskie & # Usb automounter daemon
 
-  ## [DVI-D-0 ★ ] [HDMI-A-0]
-  xrandr --output DVI-D-0 --primary --left-of HDMI-A-0
+## Tools
+dunst &
+flameshot &
+copyq &
+udiskie & # Usb automounter daemon
 
-  ## Per monitor workspace
-  bspc monitor DVI-D-0 -d Q W E R
-  bspc monitor HDMI-A-0 -d 1 2 3 4
+## [DVI-D-0 ★ ] [HDMI-A-0]
+xrandr --output DVI-D-0 --primary --left-of HDMI-A-0
 
-  ## Gap, border and padding configure
-  bspc config window_gap 8
-  bspc config border_width 3
-  bspc config top_padding 22
-  bspc config normal_border_color \#3c3836
-  bspc config active_border_color \#7c6f64
-  bspc config focused_border_color \#7c6f64
-  bspc config presel_feedback_color \#7c6f64
+## Per monitor workspace
+bspc monitor DVI-D-0 -d Q W E R
+bspc monitor HDMI-A-0 -d 1 2 3 4
 
-  ## Disable monitor auto-sleep
-  xset -dpms s off
-
-  ## Wallpaper restore
-  nitrogen --restore &
-
-  ## Polybar
-  bash $HOME/.config/polybar/launch.sh
-
-  ## Compositor
-  picom --config ~/.config/picom/picom.conf
-
-#fi
-
-bspc config border_width         8
-bspc config window_gap           16
-
+## Gap, border and padding configure
+bspc config window_gap 8
+# bspc config border_width 3
+bspc config border_width 2
+# bspc config top_padding 22
+bspc config top_padding 13
+bspc config normal_border_color \#3c3836
+bspc config active_border_color \#7c6f64
+bspc config focused_border_color \#7c6f64
+bspc config presel_feedback_color \#7c6f64
+bspc config remove_disabled_monitors
+bspc config bottom_padding        0
+bspc config left_padding          0
+bspc config right_padding         0
 bspc config automatic_scheme      spiral
 bspc config split_ratio           0.50
 bspc config borderless_monocle    true
@@ -62,23 +46,17 @@ bspc config gapless_monocle       true
 bspc config focus_follows_pointer false
 bspc config click_to_focus        true
 bspc config history_aware_focus   true
-bspc config top_padding           48
-bspc config bottom_padding        0
-bspc config left_padding          0
-bspc config right_padding         0
 
-bspc desktop ^1 -l tiled
-bspc desktop ^2 -l tiled
-bspc desktop ^3 -l tiled
-bspc desktop ^4 -l tiled
-bspc desktop ^5 -l tiled
-bspc desktop ^6 -l tiled
-bspc desktop ^7 -l tiled
-bspc desktop ^8 -l tiled
+## Disable monitor auto-sleep
+xset -dpms s off
 
-# Rules
-# 
-# Example:
-# bspc rule -a mpv state=floating sticky=on rectangle=300x180+1060+475
+## Wallpaper restore
+nitrogen --restore &
 
-bspc rule -a zathura state=tiled 
+## Polybar
+bash $HOME/.config/polybar/launch.sh
+
+## Compositor
+picom --config ~/.config/picom/picom.conf
+
+bspc rule -a Zathura state=tiled

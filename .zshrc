@@ -79,6 +79,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+    zsh-completions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -110,14 +111,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias archalien="python3 ~/.scripts/archalien.py"
-alias rmshit="python3 ~/.scripts/rmshit.py"
+alias archalien="python3 $HOME/.scripts/archalien.py"
+alias rmshit="python3 $HOME/.scripts/rmshit.py"
 alias claer="clear"
 alias clera="clear"
 alias clare="clear"
+alias clea="clear"
+alias lear="clear"
+alias sp="sudo pacman"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Bfetch configuration
+alias bfetch="$HOME/.local/bin/bfetch"
+export BFETCH_CLASSIC_MODE="false"
+export BFETCH_PADDING="0"
+
