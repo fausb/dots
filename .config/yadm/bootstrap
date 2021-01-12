@@ -1,0 +1,24 @@
+#!/bin/sh
+
+echo "Installing Yay..."
+sudo pacman -S git
+mkdir $HOME/.gits
+cd $HOME/.gits
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
+echo "Installing important Aur softwares"
+yay -S rofi polybar copyq flameshot alacritty-ligatures thunar dunst slock neovim
+nvim '+PlugUpdate'
+
+
+echo "Installing Zsh, OhMyZsh and PowerLevel10k..."
+yay -S zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+
