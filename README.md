@@ -22,4 +22,4 @@
 see [yadm](https://github.com/TheLocehiliosan/yadm)
 
 ## use
-`yadm clone https:/www.github.com/fausb/dots.git`
+`yadm clone https:/www.github.com/fausb/dots.git --bootstrap`
