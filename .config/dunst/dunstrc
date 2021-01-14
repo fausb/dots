@@ -1,5 +1,5 @@
 [global]
-    font = FiraCode NF 10
+    font = DroidSans NF 10
     allow_markup = yes
     format = "<b>%a:</b> %s\n%b"
     sort = yes
@@ -20,8 +20,8 @@
     sticky_history = yes
     line_height = 0
     separator_height = 1
-    padding = 6
-    horizontal_padding = 4
+    padding = 5
+    horizontal_padding = 5
     separator_color = frame
     browser = /usr/bin/chromium
 
