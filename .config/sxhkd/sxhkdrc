@@ -30,13 +30,14 @@ XF86AudioStop
 # Volume dunstify notification
 #
 
-XF86AudioLowerVolume
-	~/.config/dunst/volume/volume.sh down	
+XF86AudioLowerVolume 
+    ~/.config/dunst/volume/volume.sh down	
 
 XF86AudioRaiseVolume
 	~/.config/dunst/volume/volume.sh up
 
-XF86AudioMute ~/.config/dunst/volume/volume.sh mute
+XF86AudioMute 
+    ~/.config/dunst/volume/volume.sh mute
 
 #
 # Rest of the hotkeys
@@ -51,8 +52,11 @@ ctrl + shift + Escape
 super + v
 	copyq menu
 
+# super + space
+#	rofi -show drun
+
 super + space
-	rofi -show drun
+    dmenu_run -fn "envypn" -nb '#282828' -sf '#ebdbb2' -sb '#7c6f64' -nf '#ebdbb2'
 
 Print
 	flameshot gui
