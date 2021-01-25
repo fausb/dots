@@ -52,11 +52,11 @@ ctrl + shift + Escape
 super + v
 	copyq menu
 
-# super + space
-#	rofi -show drun
-
 super + space
-    dmenu_run -fn "envypn" -nb '#282828' -sf '#ebdbb2' -sb '#7c6f64' -nf '#ebdbb2'
+    rofi -show drun
+
+# super + space
+#   dmenu_run -fn "envypn" -nb '#282828' -sf '#ebdbb2' -sb '#7c6f64' -nf '#ebdbb2'
 
 Print
 	flameshot gui
