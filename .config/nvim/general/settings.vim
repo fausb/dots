@@ -40,3 +40,4 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 " You can't stop me
 cmap w!! w !sudo tee %
 let g:rainbow_active = 1
+let g:gruvbox_contrast_dark = "medium"

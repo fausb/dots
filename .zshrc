@@ -131,3 +131,7 @@ alias bfetch="$HOME/.local/bin/bfetch"
 export BFETCH_CLASSIC_MODE="false"
 export BFETCH_PADDING="0"
 
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=246,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=246,underline
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=246
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'

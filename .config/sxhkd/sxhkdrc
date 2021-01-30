@@ -187,4 +187,4 @@ super + {Left,Down,Up,Right}
 
 # gap reset
 super + b
-    bspc config window_gap 8
+    bspc config window_gap 10
