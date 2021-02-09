@@ -1,4 +1,4 @@
-<h1 align="center">dotfiles</h1>
+<h1 align="center">[.] dotfiles</h1>
 <p align="center">
   <img alt="Arch Linux" src="https://img.shields.io/badge/Arch_Linux-informational?style=for-the-badge&logo=arch-linux&logoColor=ebdbb2&color=689d6a" />
   <img alt="Neovim" src="https://img.shields.io/badge/Neovim-informational?style=for-the-badge&logo=neovim&logoColor=ebdbb2&color=98971a" />
