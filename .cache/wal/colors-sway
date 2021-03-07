@@ -1,0 +1,21 @@
+set $wallpaper /home/fb/.config/wpg/wallpapers/wallhaven-y8m8rg.jpg
+
+set $background #021119
+set $foreground #91d4c3
+
+set $color0 #021119
+set $color1 #145866
+set $color2 #236C71
+set $color3 #2E897A
+set $color4 #45947D
+set $color5 #357983
+set $color6 #2D9F89
+set $color7 #91d4c3
+set $color8 #659488
+set $color9 #145866
+set $color10 #236C71
+set $color11 #2E897A
+set $color12 #45947D
+set $color13 #357983
+set $color14 #2D9F89
+set $color15 #91d4c3

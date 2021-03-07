@@ -1,5 +1,6 @@
 {
     "coc.preferences.formatOnSaveFiletypes": [
+        "scss",
         "css",
         "markdown",
         "javascript",
@@ -15,7 +16,7 @@
     "python.linting.pylintEnabled": true,
     "snippets.ultisnips.directories": [
         "UltiSnips",
-        "~/.config/nvim/utils/snips"
+        "~/.config/nvim/snips"
     ],
     // explorer
     "explorer.width": 30,

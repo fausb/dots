@@ -11,6 +11,9 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/home/fb/.oh-my-zsh"
 
+(cat ~/.cache/wal/sequences &)
+(sh .cache/wal/colors-tty.sh &)
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -119,6 +122,7 @@ alias clare="clear"
 alias clea="clear"
 alias lear="clear"
 alias sp="sudo pacman"
+alias nf="neofetch"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -126,12 +130,8 @@ alias sp="sudo pacman"
 # source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Bfetch configuration
-alias bfetch="$HOME/.local/bin/bfetch"
-export BFETCH_CLASSIC_MODE="false"
-export BFETCH_PADDING="0"
-
-ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=246,underline
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=246,underline
-ZSH_HIGHLIGHT_STYLES[arg0]=fg=246
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=3,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=3,underline
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=3
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+

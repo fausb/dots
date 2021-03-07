@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/fb/.config/wpg/wallpapers/wallhaven-y8m8rg.jpg"
+let background = "#021119"
+let foreground = "#91d4c3"
+let cursor     = "#91d4c3"
+
+" Colors
+let color0  = "#021119"
+let color1  = "#145866"
+let color2  = "#236C71"
+let color3  = "#2E897A"
+let color4  = "#45947D"
+let color5  = "#357983"
+let color6  = "#2D9F89"
+let color7  = "#91d4c3"
+let color8  = "#659488"
+let color9  = "#145866"
+let color10 = "#236C71"
+let color11 = "#2E897A"
+let color12 = "#45947D"
+let color13 = "#357983"
+let color14 = "#2D9F89"
+let color15 = "#91d4c3"
