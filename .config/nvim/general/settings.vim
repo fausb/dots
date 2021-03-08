@@ -13,7 +13,7 @@ set iskeyword+=-                      	" treat dash separated words as a word te
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
-set t_Co=256                            " Support 256 colors
+"set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
 set expandtab
 set tabstop=2                           " Insert 2 spaces for a tab
@@ -42,7 +42,6 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
-let g:rainbow_active = 1
 
 " Disable netrw
 let loaded_netrwPlugin = 1

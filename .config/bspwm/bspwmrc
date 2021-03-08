@@ -47,3 +47,4 @@ bspc config history_aware_focus true
 bash $HOME/.config/polybar/launch.sh
 
 bspc rule -a Zathura state=tiled
+bash /home/fb/.config/bspwm/bspwm_colors.sh &bash /home/fb/.config/bspwm/bspwm_colors.sh &bash /home/fb/.config/bspwm/bspwm_colors.sh &bash /home/fb/.config/bspwm/bspwm_colors.sh &bash /home/fb/.config/bspwm/bspwm_colors.sh &bash /home/fb/.config/bspwm/bspwm_colors.sh &
