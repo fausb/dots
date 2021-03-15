@@ -36,12 +36,11 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set relativenumber
 set autochdir                           " Your working directory will always be the same as your working directory
-highlight EndOfBuffer ctermfg=black ctermbg=black " Hide tildes in blank lines
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
-" You can't stop me
-cmap w!! w !sudo tee %
-
 " Disable netrw
 let loaded_netrwPlugin = 1
+
+colorscheme wal
+highlight EndOfBuffer ctermfg=black ctermbg=black " Hide tildes in blank lines
